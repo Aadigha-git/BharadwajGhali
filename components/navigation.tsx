@@ -10,9 +10,9 @@ import { useState } from "react";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/work", label: "Work" },
-  { href: "https://gaurshubham.com/TZDOL", label: "Blog" },
   { href: "/about", label: "About" },
+  { href: "https://gaurshubham.com/TZDOL", label: "Blog" },
+  { href: "/work", label: "Work" },
 ];
 
 export function Navigation() {
@@ -29,9 +29,9 @@ export function Navigation() {
       <div className="container max-w-[900px] h-14 flex items-center mt-6 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-sm sm:text-base lg:text-[16px] font-medium hover:text-foreground/80 transition-colors"
+          className="text-m sm:text-base lg:text-[17.6px] font-medium hover:text-foreground/80 transition-colors"
         >
-          Shubham Gaur
+          SG
         </Link>
         <div className="flex-1" />
 

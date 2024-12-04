@@ -37,14 +37,14 @@ export function HeroSection() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-3 text- sm:gap-4">
+        <div className="flex flex-wrap gap-3 lg:text-[16px] sm:gap-4">
           <Button
             asChild
             variant="outline"
             className="group text-base sm:text-lg"
           >
             <Link href="/work">
-              View My Work
+              <p>My Work</p>
               <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
@@ -54,7 +54,7 @@ export function HeroSection() {
             className="group text-base sm:text-lg"
           >
             <Link href="/about">
-              About Me
+              <p>About Me</p>
               <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
@@ -68,7 +68,7 @@ export function HeroSection() {
               target="https://gaurshubham.com/resume"
               rel="noopener noreferrer"
             >
-              Resume
+              <p>Resume</p>
               <FileText className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
             </Link>
           </Button>

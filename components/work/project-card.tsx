@@ -1,6 +1,12 @@
 "use client";
 
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, Globe } from "lucide-react";
 import { motion } from "framer-motion";
@@ -14,12 +20,18 @@ interface ProjectCardProps {
   demo?: string;
 }
 
-export function ProjectCard({ title, description, technologies, github, demo }: ProjectCardProps) {
+export function ProjectCard({
+  title,
+  description,
+  technologies,
+  github,
+  demo,
+}: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1.0 }}
       viewport={{ once: true }}
     >
       <Card>

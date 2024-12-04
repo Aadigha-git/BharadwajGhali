@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
     role: "Software Development Engineer",
     duration: "Mar 2024 - July 2024",
     description:
-      "Led development of company's first PoC software release, securing 25,000,00 in VC investment. Developed cross-platform releases using React, Next.js, Electron, and PostgreSQL.",
+      "Led development of company's first PoC software release. Developed cross-platform releases using React, Next.js, ElectronJS, and PostgreSQL.",
   },
   {
     company: "NIT Trichy",

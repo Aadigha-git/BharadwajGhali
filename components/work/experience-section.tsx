@@ -17,10 +17,16 @@ export function ExperienceSection() {
           >
             <div className="flex justify-between items-baseline">
               <h3 className="text-[20px] font-medium">{job.company}</h3>
-              <span className="text-[16px] text-muted-foreground">{job.duration}</span>
+              <span className="text-[16px] text-muted-foreground">
+                {job.duration}
+              </span>
             </div>
-            <p className="text-[16px] text-muted-foreground font-medium">{job.role}</p>
-            <p className="text-[16px] text-muted-foreground">{job.description}</p>
+            <p className="text-[16px] text-muted-foreground font-medium">
+              {job.role}
+            </p>
+            <p className="text-[16px] text-muted-foreground">
+              {job.description}
+            </p>
           </motion.div>
         ))}
       </div>

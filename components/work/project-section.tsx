@@ -40,8 +40,9 @@ export function ProjectSection() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.0 }}
+      viewport={{ once: true }}
       className="space-y-12"
     >
       <h2 className="text-[28px] font-medium">Projects</h2>
@@ -50,8 +51,9 @@ export function ProjectSection() {
           <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.0 }}
+            viewport={{ once: true }}
             className="space-y-4"
           >
             <div className="flex items-center justify-between">

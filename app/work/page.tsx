@@ -12,8 +12,9 @@ export default function WorkPage() {
     <div className="container max-w-[900px] mx-auto px-8 py-16">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0 }}
+        viewport={{ once: true }}
         className="space-y-16"
       >
         <ExperienceSection />

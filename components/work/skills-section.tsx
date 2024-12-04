@@ -12,7 +12,9 @@ export function SkillsSection() {
           <motion.div
             key={category.category}
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.0 }}
+            viewport={{ once: true }}
             className="space-y-2"
           >
             <h3 className="text-[20px] font-medium">{category.category}</h3>

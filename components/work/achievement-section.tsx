@@ -33,8 +33,9 @@ export function AchievementSection() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.0 }}
+      viewport={{ once: true }}
       className="space-y-12"
     >
       <h2 className="text-[28px] font-medium">Achievements</h2>
@@ -43,8 +44,9 @@ export function AchievementSection() {
           <motion.div
             key={achievement.title}
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.0 }}
+            viewport={{ once: true }}
             className="flex gap-4"
           >
             <div className="mt-1">
