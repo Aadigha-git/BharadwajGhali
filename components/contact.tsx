@@ -41,7 +41,7 @@ const socialLinks = [
 
 export function Contact() {
   return (
-    <div className="relative z-10 flex flex-wrap gap-4 sm:gap-6">
+    <div className="relative z-50 flex flex-wrap gap-4 sm:gap-6">
       {socialLinks.map((link, i) => (
         <motion.div
           key={link.name}

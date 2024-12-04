@@ -11,18 +11,18 @@ export function HeroSection() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="space-y-6 sm:space-y-8"
+      className="space-y-5 sm:space-y-8"
     >
-      <h1 className="text-2xl sm:text-3xl lg:text-[28px] font-medium">
+      <h1 className="text-2xl sm:text-3xl lg:text-[28px] font-medium tracking-tighter">
         Shubham Gaur
       </h1>
       <div className="space-y-6 sm:space-y-8">
         <div className="space-y-4 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground">
           <p>Full-Stack Engineer specializing in AI/ML and Cybersecurity</p>
           <p>
-            Since my childhood, I've been fascinated by computers and
-            technology. Starting with PowerPoint at age 10, I've grown into a
-            passionate developer building secure, scalable applications and
+            Since my childhood, I&apos;ve been fascinated by computers and
+            technology. Starting with PowerPoint at age 10, I&apos;ve grown into
+            a passionate developer building secure, scalable applications and
             advancing AI technologies.
           </p>
           <p>
@@ -31,13 +31,13 @@ export function HeroSection() {
             cutting-edge technology with practical applications.
           </p>
           <p>
-            Currently, I'm working on advancing reinforcement learning
+            Currently, I&apos;m working on advancing reinforcement learning
             applications in cybersecurity while building scalable web
             applications that make a difference.
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-3 lg:text-[16px] sm:gap-4">
+        <div className="flex flex-wrap gap-2.5 lg:text-[16px] sm:gap-4">
           <Button
             asChild
             variant="outline"
@@ -63,7 +63,10 @@ export function HeroSection() {
             variant="outline"
             className="group text-base sm:text-lg"
           >
-            <Link href="/resume.pdf" rel="noopener noreferrer">
+            <Link
+              href="https://drive.google.com/file/d/1d0eyD_2s5iHf-WsSAnMxhVAYB4yaEi6M/view?usp=sharing"
+              rel="noopener noreferrer"
+            >
               <p>Resume</p>
               <FileText className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
             </Link>

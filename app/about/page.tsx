@@ -22,7 +22,7 @@ export default function AboutPage() {
           </motion.h1>
 
           <motion.div
-            className="space-y-8 sm:space-y-12 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground"
+            className="space-y-4 sm:space-y-12 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -41,9 +41,9 @@ export default function AboutPage() {
                 about them, fixing my computer, taking apart hard drives.
               </motion.p>
 
-              {/* <div className="w-full max-w-[600px] ">
+              <div className="w-full max-w-[600px] ">
                 <Carousel images={images} />
-              </div> */}
+              </div>
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
               >
-                I've spent countless hours playing Condition Zero, Total
+                I&apos;ve spent countless hours playing Condition Zero, Total
                 Overdose, Grand Theft Auto, Need For Speed etc. I first learnt
                 programming using QBasic during my school, thanks to Windows XP
                 & computer viruses I learnt the habit of fixing errors, early in
@@ -65,10 +65,11 @@ export default function AboutPage() {
                 viewport={{ once: true }}
               >
                 Other than programming I enjoy astrophotography, a hobby I
-                picked up casually exploring my phone camera's capabilities,
-                I've captured different shots of moons, stars & nebulas. During
-                my college, I started writing my own blog, The Zero Days of Life
-                where I write about my daily life, my failures, challenges etc.
+                picked up casually exploring my phone camera&apos;s
+                capabilities, I&apos;ve captured different shots of moons, stars
+                & nebulas. During my college, I started writing my own blog, The
+                Zero Days of Life where I write about my daily life, my
+                failures, challenges etc.
               </motion.p>
 
               <motion.p
@@ -95,7 +96,7 @@ export default function AboutPage() {
             className="text-2xl sm:text-3xl lg:text-[28px] font-medium"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.0 }}
+            transition={{ duration: 0.2 }}
             viewport={{ once: true }}
           >
             Reading List
@@ -105,7 +106,7 @@ export default function AboutPage() {
             className="space-y-1.5 sm:space-y-2 text-sm sm:text-base lg:text-[16px] text-muted-foreground"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.0 }}
+            transition={{ duration: 0.2 }}
             viewport={{ once: true }}
           >
             {books.map((book, index) => (
@@ -113,7 +114,7 @@ export default function AboutPage() {
                 key={book}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.0 }}
+                transition={{ duration: 0.2 }}
                 viewport={{ once: true }}
               >
                 {book}

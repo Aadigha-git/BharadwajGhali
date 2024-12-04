@@ -1,92 +1,122 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { Image as ImageType } from "@/data/about";
 
 interface CarouselProps {
-  images: ImageType[];
+  images: { src: string; alt: string }[];
+  autoSlide?: boolean; // Enable or disable auto-slide
+  slideInterval?: number; // Interval for auto-slide (ms)
 }
 
-export function Carousel({ images }: CarouselProps) {
+export function Carousel({
+  images,
+  autoSlide = false,
+  slideInterval = 5000,
+}: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   const slideVariants = {
     enter: (direction: number) => ({
-      x: direction > 0 ? '100%' : '-100%',
-      opacity: 0
+      x: direction > 0 ? "100%" : "-100%",
+      opacity: 0,
     }),
     center: {
-      zIndex: 1,
       x: 0,
-      opacity: 1
+      opacity: 1,
     },
     exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? '100%' : '-100%',
-      opacity: 0
-    })
+      x: direction < 0 ? "100%" : "-100%",
+      opacity: 0,
+    }),
   };
 
-  const paginate = (newDirection: number) => {
-    setCurrentIndex((prevIndex) => (prevIndex + newDirection + images.length) % images.length);
-  };
+  const paginate = useCallback(
+    (newDirection: number) => {
+      setDirection(newDirection);
+      setCurrentIndex(
+        (prev) => (prev + newDirection + images.length) % images.length
+      );
+    },
+    [images.length]
+  );
+
+  useEffect(() => {
+    if (!autoSlide) return;
+
+    const interval = setInterval(() => paginate(1), slideInterval);
+    return () => clearInterval(interval);
+  }, [autoSlide, slideInterval, paginate]);
 
   return (
-    <div className="relative w-full aspect-video max-h-[400px] bg-secondary/5 rounded-lg overflow-hidden group">
-      <AnimatePresence initial={false} custom={currentIndex}>
+    <div
+      className="relative w-full aspect-video max-h-[300px] bg-secondary/5 rounded-lg overflow-hidden"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Image carousel"
+    >
+      {/* Slide Animation */}
+      <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentIndex}
-          custom={currentIndex}
+          custom={direction}
           variants={slideVariants}
           initial="enter"
           animate="center"
           exit="exit"
           transition={{
             x: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 }
+            opacity: { duration: 1 },
           }}
-          className="absolute w-full h-full"
+          className="absolute inset-0"
         >
           <Image
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
             fill
-            className="object-cover"
+            className="object-cover z-50"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 600px"
             priority
           />
         </motion.div>
       </AnimatePresence>
-      
-      <div className="absolute inset-0 flex items-center justify-between p-2 sm:p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+
+      {/* Navigation Controls */}
+      <div className="absolute inset-0  z-50 flex items-center justify-between px-2 sm:px-4 opacity-80">
         <button
           className="p-1 sm:p-2 bg-background/80 rounded-full hover:bg-background/90 transition-colors"
           onClick={() => paginate(-1)}
+          aria-label="Previous slide"
         >
           <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
-        
         <button
-          className="p-1 sm:p-2 bg-background/80 rounded-full hover:bg-background/90 transition-colors"
+          className="p-1 sm:p-2 z-50 bg-background/80 rounded-full hover:bg-background/90 transition-colors"
           onClick={() => paginate(1)}
+          aria-label="Next slide"
         >
           <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
       </div>
-      
-      <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2">
+
+      {/* Indicator Dots */}
+      <div className="absolute bottom-2 z-50 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2">
         {images.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentIndex(index)}
+            onClick={() => {
+              setDirection(index > currentIndex ? 1 : -1);
+              setCurrentIndex(index);
+            }}
             className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-colors ${
-              index === currentIndex 
-                ? "bg-background" 
+              index === currentIndex
+                ? "bg-background"
                 : "bg-background/50 hover:bg-background/75"
             }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>

@@ -12,10 +12,10 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.0 }}
         viewport={{ once: true }}
-        className="space-y-16"
+        className="space-y-8"
       >
         <HeroSection />
-        <h2 className="text-2xl sm:text-2xl lg:text-3xl font-medium mb-4">
+        <h2 className="text-2xl sm:text-2xl lg:text-2xl font-medium ">
           Contact
         </h2>
         <Contact />
