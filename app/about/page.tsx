@@ -41,9 +41,9 @@ export default function AboutPage() {
                 about them, fixing my computer, taking apart hard drives.
               </motion.p>
 
-              <div className="w-full max-w-[600px] ">
+              {/* <div className="w-full max-w-[600px] ">
                 <Carousel images={images} />
-              </div>
+              </div> */}
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
