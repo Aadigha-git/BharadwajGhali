@@ -63,11 +63,7 @@ export function HeroSection() {
             variant="outline"
             className="group text-base sm:text-lg"
           >
-            <Link
-              href="/resume.pdf"
-              target="https://gaurshubham.com/resume"
-              rel="noopener noreferrer"
-            >
+            <Link href="/resume.pdf" rel="noopener noreferrer">
               <p>Resume</p>
               <FileText className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
             </Link>
