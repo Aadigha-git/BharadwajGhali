@@ -15,9 +15,7 @@ export default function Home() {
         className="space-y-8"
       >
         <HeroSection />
-        <h2 className="text-2xl sm:text-2xl lg:text-2xl font-medium ">
-          Contact
-        </h2>
+        <h2 className="text-2xl sm:text-l lg:text-2xl font-medium ">Contact</h2>
         <Contact />
       </motion.div>
     </div>

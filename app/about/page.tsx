@@ -12,7 +12,7 @@ export default function AboutPage() {
       <div className="py-8 sm:py-12 lg:py-16 space-y-8 sm:space-y-12 lg:space-y-16">
         <Section>
           <motion.h1
-            className="text-2xl sm:text-3xl lg:text-[28px] font-medium"
+            className="text-xl sm:text-2xl lg:text-3xl font-medium"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -22,7 +22,7 @@ export default function AboutPage() {
           </motion.h1>
 
           <motion.div
-            className="space-y-4 sm:space-y-12 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground"
+            className="space-y-4 sm:space-y-4 text-xs sm:text-sm lg:text-base leading-relaxed text-muted-foreground"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -40,10 +40,6 @@ export default function AboutPage() {
                 my own. As a result, I spent years of my childhood learning
                 about them, fixing my computer, taking apart hard drives.
               </motion.p>
-
-              {/* <div className="w-full max-w-[600px] ">
-                <Carousel images={images} />
-              </div> */}
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -93,7 +89,7 @@ export default function AboutPage() {
 
         <Section>
           <motion.h2
-            className="text-2xl sm:text-3xl lg:text-[28px] font-medium"
+            className="text-xl sm:text-2xl lg:text-3xl font-medium"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
@@ -103,7 +99,7 @@ export default function AboutPage() {
           </motion.h2>
 
           <motion.div
-            className="space-y-1.5 sm:space-y-2 text-sm sm:text-base lg:text-[16px] text-muted-foreground"
+            className="space-y-1.5 sm:space-y-1 text-xs sm:text-sm lg:text-base text-muted-foreground"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}

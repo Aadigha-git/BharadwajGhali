@@ -25,14 +25,20 @@ export function CompanyCard({
     >
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center justify-between">
+          <CardTitle className="flex items-center justify-between text-sm sm:text-base md:text-lg">
             <span>{company}</span>
-            <span className="text-sm text-muted-foreground">{duration}</span>
+            <span className="text-xs sm:text-sm text-muted-foreground">
+              {duration}
+            </span>
           </CardTitle>
-          <p className="text-sm font-medium text-muted-foreground">{role}</p>
+          <p className="text-xs sm:text-sm md:text-base font-medium text-muted-foreground">
+            {role}
+          </p>
         </CardHeader>
         <CardContent>
-          <p className="text-sm text-muted-foreground">{description}</p>
+          <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
+            {description}
+          </p>
         </CardContent>
       </Card>
     </motion.div>

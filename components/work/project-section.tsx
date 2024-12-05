@@ -17,7 +17,7 @@ export function ProjectSection() {
     {
       title: "Meetster",
       description:
-        "Meetster aims to making scheduling IRL meets, easy and fun. Meetster is currently in protoype development, and can be waitlisted.",
+        "Meetster aims to making scheduling IRL meets, easy and fun. Meetster is currently in prototype development, and can be waitlisted.",
       technologies: ["React + Vite", "Supabase", "Typescript"],
       demo: "https://meetster.gaurshubham.com",
     },
@@ -45,9 +45,9 @@ export function ProjectSection() {
       viewport={{ once: true }}
       className="space-y-12"
     >
-      <h2 className="text-[28px] font-medium">Projects</h2>
+      <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium">Projects</h2>
       <div className="space-y-16">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 20 }}
@@ -56,8 +56,10 @@ export function ProjectSection() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <div className="flex items-center justify-between">
-              <h3 className="text-[20px] font-medium">{project.title}</h3>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-medium">
+                {project.title}
+              </h3>
               <div className="flex gap-4">
                 {project.github && (
                   <Link
@@ -81,14 +83,14 @@ export function ProjectSection() {
                 )}
               </div>
             </div>
-            <p className="text-[16px] text-muted-foreground leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="text-[14px] text-muted-foreground bg-secondary/50 px-3 py-1 rounded-full"
+                  className="text-sm sm:text-base text-muted-foreground bg-secondary/50 px-3 py-1 rounded-full"
                 >
                   {tech}
                 </span>
