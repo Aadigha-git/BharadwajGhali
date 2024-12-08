@@ -26,7 +26,7 @@ export function Navigation() {
       transition={{ duration: 0.5 }}
       className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur"
     >
-      <div className="container max-w-[900px] h-14 flex items-center mt-6 sm:px-6 lg:px-8">
+      <div className="container max-w-[1000px] h-10 flex items-center mt-6 sm:px-6 lg:px-8">
         <Link
           href="/"
           className="text-m sm:text-base lg:text-[17.6px] font-medium hover:text-foreground/80 transition-colors"

@@ -6,7 +6,7 @@ import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
-    <div className="container max-w-[900px] mx-auto px-8 py-16">
+    <div className="container max-w-[1000px] mx-auto px-8 py-14">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

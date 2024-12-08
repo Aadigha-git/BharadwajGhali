@@ -56,9 +56,9 @@ export function Contact() {
             prefetch={false}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center gap-2 text-sm sm:text-base text-muted-foreground transition-colors ${link.color} dark:hover:text-white relative z-30`}
+            className={`flex items-center gap-2 text-sm sm:text-base text-muted-foreground transition-colors  dark:hover:text-white relative z-30`}
           >
-            <link.icon className="h-5 w-5 sm:h-5 sm:w-5" />
+            <link.icon className="h-6 w-6 sm:h-6 sm:w-6" />
           </Link>
         </motion.div>
       ))}
