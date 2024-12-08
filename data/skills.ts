@@ -6,11 +6,19 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
   {
     category: "Programming",
-    skills: ["C++", "Java", "Python", "Rust", "Solidity"],
+    skills: ["C++", "Java", "Python", "Rust", "Solidity", "Embedded C"],
   },
   {
     category: "Web Development",
-    skills: ["HTML/CSS/JS", "React", "NodeJS", "Django", "NextJS"],
+    skills: [
+      "HTML/CSS/JS",
+      "React",
+      "NodeJS",
+      "Django",
+      "NextJS",
+      "SQL",
+      "MongoDB",
+    ],
   },
   {
     category: "Machine Learning",
@@ -18,6 +26,10 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: "Tools",
-    skills: ["Git", "Docker", "AWS", "Azure", "Playwright"],
+    skills: ["Bash", "Sublime Text", "VS Code", "Vim"],
+  },
+  {
+    category: "Others",
+    skills: ["Git", "Linux", "VM", "Docker", "AWS", "Azure", "Playwright"],
   },
 ];

@@ -12,7 +12,7 @@ export const education: Education[] = [
     duration: "2021 – 2025",
   },
   {
-    degree: "PCM",
+    degree: "Physics, Chemistry, Mathematics",
     school: "G.S. jangid Memorial Public School, Jodhpur",
     duration: "2019 – 2021",
     grade: "71.6%",

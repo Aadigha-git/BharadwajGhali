@@ -9,9 +9,9 @@ export const experiences: Experience[] = [
   {
     company: "Smartdocs Inc",
     role: "Software Development Engineer",
-    duration: "August 2024 - Present",
+    duration: "Aug 2024 - Nov 2024",
     description:
-      "Developed and deployed 3 production applications and 2 proof-of-concept projects. Built a real-time chatbot with optimized LLM context tokens and created a Thick client application using Electron.js, reducing yearly costs by 100,000 INR.",
+      "Developed and deployed 3 production applications and 2 proof-of-concept projects. Built a real-time chatbot with optimized LLM context tokens and created a Thick client application using ElectronJS, reducing yearly Jenkins server costs.",
   },
   {
     company: "Anti AI",

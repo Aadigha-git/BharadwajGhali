@@ -32,7 +32,7 @@ export function ProjectSection() {
       title: "CyberBattleSim (Microsoft)",
       description:
         "Enhanced simulation functionalities and refined neural network algorithms during research internship.",
-      technologies: ["Python", "PyTorch", "Reinforcement Learning"],
+      technologies: ["Python", "PyTorch", "Reinforcement Learning", "Linux"],
       github: "https://github.com/microsoft/CyberBattleSim",
     },
   ];
