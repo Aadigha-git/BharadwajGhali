@@ -7,7 +7,7 @@ export function ExperienceSection() {
   return (
     <section className="space-y-8">
       <h1 className="text-[28px] font-medium">Experience</h1>
-      <div className="space-y-12">
+      <div className="space-y-8">
         {experiences.map((job) => (
           <motion.div
             key={job.company}
@@ -24,7 +24,7 @@ export function ExperienceSection() {
             <p className="text-[16px] text-muted-foreground font-medium">
               {job.role}
             </p>
-            <p className="text-[16px] text-muted-foreground">
+            <p className="text-[16px] text-muted-foreground w-[80%]">
               {job.description}
             </p>
           </motion.div>

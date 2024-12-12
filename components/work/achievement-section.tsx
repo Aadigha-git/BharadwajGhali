@@ -39,7 +39,7 @@ export function AchievementSection() {
       className="space-y-12"
     >
       <h2 className="text-[28px] font-medium">Achievements</h2>
-      <div className="space-y-12">
+      <div className="space-y-8">
         {achievements.map((achievement, index) => (
           <motion.div
             key={achievement.title}
@@ -61,7 +61,7 @@ export function AchievementSection() {
                   {achievement.duration}
                 </span>
               </div>
-              <p className="text-[16px] text-muted-foreground leading-relaxed sm:w-[70%] md:w-[50%]">
+              <p className="text-[16px] text-muted-foreground leading-relaxed w-[75%]">
                 {achievement.description}
               </p>
             </div>

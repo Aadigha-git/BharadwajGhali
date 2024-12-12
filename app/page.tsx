@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Head from "next/head";
 import { HeroSection } from "@/components/home/hero-section";
 import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
-    <div className="container max-w-[1000px] mx-auto px-8 py-14">
+    <div className="container max-w-[1000px] mx-auto px-6 py-14">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

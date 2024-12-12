@@ -32,7 +32,9 @@ export function CompanyCard({
           <p className="text-sm font-medium text-muted-foreground">{role}</p>
         </CardHeader>
         <CardContent>
-          <p className="text-sm text-muted-foreground">{description}</p>
+          <p className="text-sm text-muted-foreground sm:text-[8px] ">
+            {description}
+          </p>
         </CardContent>
       </Card>
     </motion.div>

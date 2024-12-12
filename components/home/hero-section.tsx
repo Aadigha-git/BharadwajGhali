@@ -11,14 +11,14 @@ export function HeroSection() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="space-y-5 sm:space-y-8"
+      className="space-y-4 sm:space-y-4"
     >
-      <h1 className="text-2xl sm:text-3xl lg:text-[28px] font-medium tracking-tighter">
+      <h1 className="text-2xl sm:text-2xl lg:text-[28px] font-medium ">
         Shubham Gaur
       </h1>
-      <div className="space-y-6 sm:space-y-8">
+      <div className="space-y-8 sm:space-y-8">
         <div className="space-y-4 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground">
-          <p>Full-Stack Engineer specializing in AI/ML and Cybersecurity</p>
+          <p>Full-Stack Engineer specializing in AI/ML and Cybersecurity.</p>
           <p>
             Since my childhood, I&apos;ve been fascinated by computers and
             technology. Starting with PowerPoint at age 10, I&apos;ve grown into

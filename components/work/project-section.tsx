@@ -43,10 +43,10 @@ export function ProjectSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.0 }}
       viewport={{ once: true }}
-      className="space-y-12"
+      className="space-y-10"
     >
       <h2 className="text-[28px] font-medium">Projects</h2>
-      <div className="space-y-16">
+      <div className="space-y-8">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
@@ -81,7 +81,7 @@ export function ProjectSection() {
                 )}
               </div>
             </div>
-            <p className="text-[16px] text-muted-foreground leading-relaxed">
+            <p className="text-[16px] text-muted-foreground leading-relaxed w-[80%]">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2">

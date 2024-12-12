@@ -40,7 +40,7 @@ export function ProjectCard({
         </CardHeader>
         <CardContent>
           <p className="text-sm text-muted-foreground mb-4">{description}</p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1">
             {technologies.map((tech) => (
               <span
                 key={tech}
