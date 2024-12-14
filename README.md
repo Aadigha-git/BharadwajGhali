@@ -6,22 +6,22 @@ A modern, responsive portfolio website built with Next.js 13, TypeScript, Tailwi
 ## Directory Structure
 
 ```
-├── app/                    # Next.js 13 app directory
-│   ├── about/             # About page
-│   ├── work/              # Work experience page
-│   └── page.tsx           # Home page
-├── components/            # React components
-│   ├── ui/               # Reusable UI components
-│   ├── work/             # Work page components
-│   ├── home/             # Home page components
-│   └── layout/           # Layout components
-├── data/                 # Static data files
-│   ├── about.ts         # About page data
-│   ├── education.ts     # Education data
-│   ├── experience.ts    # Work experience data
-│   └── skills.ts        # Skills data
-├── lib/                  # Utility functions
-└── public/              # Static assets
+├── app/                   
+│   ├── about/             
+│   ├── work/              
+│   └── page.tsx           
+├── components/            
+│   ├── ui/              
+│   ├── work/            
+│   ├── home/            
+│   └── layout/          
+├── data/                
+│   ├── about.ts         
+│   ├── education.ts    
+│   ├── experience.ts   
+│   └── skills.ts       
+├── lib/                
+└── public/             
 ```
 
 ## Getting Started
