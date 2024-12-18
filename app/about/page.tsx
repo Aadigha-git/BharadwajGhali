@@ -106,7 +106,7 @@ export default function AboutPage() {
             className="space-y-1 sm:space-y-1 text-sm sm:text-xs lg:text-[16px] text-muted-foreground"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.1 }}
             viewport={{ once: true }}
           >
             {books.map((book, index) => (
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 key={book}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.1 }}
                 viewport={{ once: true }}
               >
                 {book}

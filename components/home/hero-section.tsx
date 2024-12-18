@@ -11,29 +11,30 @@ export function HeroSection() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="space-y-4 sm:space-y-4"
+      className="space-y-2 sm:space-y-4"
     >
-      <h1 className="text-2xl sm:text-2xl lg:text-[28px] font-medium ">
+      <h1 className="text-2xl pb-3 sm:text-2xl lg:text-[28px] font-medium ">
         Shubham Gaur
       </h1>
-      <div className="space-y-8 sm:space-y-8">
-        <div className="space-y-4 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground">
-          <p>Full-Stack Engineer specializing in AI/ML and Cybersecurity.</p>
+      <div className="space-y-2 sm:space-y-8">
+        <div className="space-y-3 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground">
           <p>
-            Since my childhood, I&apos;ve been fascinated by computers and
-            technology. Starting with PowerPoint at age 10, I&apos;ve grown into
-            a passionate developer building secure, scalable applications and
-            advancing AI technologies.
+            I am a full time software developer, part time hacker. I believe in
+            the philosophy, "An idiot admires complexity, a genius admires
+            simplicity." Outside of programming, I enjoy writing my blog,
+            spending time offline and learning about newer innovations.
           </p>
           <p>
-            My expertise spans full-stack development, artificial intelligence,
-            and cybersecurity. I focus on creating robust solutions that combine
-            cutting-edge technology with practical applications.
+            I've recently adopted the hobby of breaking down tech and teaching
+            them in fun ways to my social group. I really admire the initiative
+            of free open source software (FOSS), thus Linux became my all-time
+            favorite.
           </p>
           <p>
-            Currently, I&apos;m working on advancing reinforcement learning
-            applications in cybersecurity while building scalable web
-            applications that make a difference.
+            I see hacking as the art of programming, creativity beyond paywalls
+            and firewalls. It’s about innovating and experimenting freely,
+            creating unique ways to make or break things rather than stealing or
+            copying.
           </p>
         </div>
 
