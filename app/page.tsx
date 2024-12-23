@@ -16,7 +16,7 @@ export default function Home() {
         className="space-y-5"
       >
         <HeroSection />
-        <h2 className="text-2xl pt-7 pb-1 sm:text-2xl lg:text-2xl font-medium ">
+        <h2 className="text-2xl pt-7 pb-1 sm:text-2xl sm:pt-2 lg:text-2xl font-medium ">
           Contact
         </h2>
         <Contact />
