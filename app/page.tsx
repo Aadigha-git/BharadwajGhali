@@ -7,7 +7,7 @@ import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
-    <div className="container max-w-[1000px] mx-auto px-6 py-14">
+    <div className=" mt-4.5 container max-w-[1000px] mx-auto px-6 py-14">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function Home() {
         className="space-y-5"
       >
         <HeroSection />
-        <h2 className="text-2xl pt-5 sm:text-2xl lg:text-2xl font-medium ">
+        <h2 className="text-2xl pt-7 pb-1 sm:text-2xl lg:text-2xl font-medium ">
           Contact
         </h2>
         <Contact />

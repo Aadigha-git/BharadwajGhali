@@ -20,7 +20,7 @@ export function HeroSection() {
         <div className="space-y-3 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground">
           <p>
             I am a full time software developer, part time hacker. I believe in
-            the philosophy, "An idiot admires complexity, a genius admires
+            the philosophy, &quot;An idiot admires complexity, a genius admires
             simplicity." Outside of programming, I enjoy writing my blog,
             spending time offline and learning about newer innovations.
           </p>
