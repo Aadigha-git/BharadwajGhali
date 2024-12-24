@@ -65,7 +65,7 @@ export function HeroSection() {
             className="group text-base sm:text-lg"
           >
             <Link
-              href="https://drive.google.com/file/d/1d0eyD_2s5iHf-WsSAnMxhVAYB4yaEi6M/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VJpCLHLKdzpM9QcrSLR-nvXM3B6jkhYH/view?usp=sharing"
               rel="noopener noreferrer"
             >
               <p>Resume</p>
