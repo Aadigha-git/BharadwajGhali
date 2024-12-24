@@ -38,7 +38,7 @@ export function HeroSection() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2.5 lg:text-[16px] sm:gap-4">
+        <div className="flex pt-4 flex-wrap gap-2.5 lg:text-[16px] sm:gap-4">
           <Button
             asChild
             variant="outline"

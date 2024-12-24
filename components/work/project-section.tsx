@@ -43,7 +43,7 @@ export function ProjectSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.0 }}
       viewport={{ once: true }}
-      className="space-y-10"
+      className="space-y-8"
     >
       <h2 className="text-[28px] font-medium">Projects</h2>
       <div className="space-y-8">

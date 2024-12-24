@@ -18,11 +18,17 @@ export function EducationSection() {
             className="space-y-2"
           >
             <div className="flex items-center justify-between">
-              <h3 className="text-[20px] font-medium">{edu.degree}</h3>
-              <p className="text-sm text-muted-foreground">{edu.duration}</p>
+              <h3 className="text-[20px] sm:text-[17px] font-medium">
+                {edu.degree}
+              </h3>
+              <p className="text-sm sm:text-[17px] text-muted-foreground">
+                {edu.duration}
+              </p>
             </div>
 
-            <p className="text-[16px] text-muted-foreground">{edu.school}</p>
+            <p className="text-[16px] text-muted-foreground w-[70%]">
+              {edu.school}
+            </p>
             <p className="text-[16px] text-muted-foreground">
               {edu.grade && `(${edu.grade})`}
             </p>
