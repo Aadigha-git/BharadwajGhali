@@ -5,8 +5,8 @@ import { Experience, experiences } from "@/data/experience";
 
 export function ExperienceSection() {
   return (
-    <section className="space-y-8">
-      <h1 className="text-[28px] font-medium">Experience</h1>
+    <section className="space-y-5">
+      <h1 className="text-[28px] font-medium pb-4">Experience</h1>
       <div className="space-y-8">
         {experiences.map((job) => (
           <motion.div
@@ -21,7 +21,7 @@ export function ExperienceSection() {
                 {job.duration}
               </span>
             </div>
-            <p className="text-[16px] text-muted-foreground font-medium">
+            <p className="text-[14px] text-muted-foreground font-medium">
               {job.role}
             </p>
             <p className="text-[16px] text-muted-foreground w-[80%]">

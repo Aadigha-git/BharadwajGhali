@@ -36,7 +36,7 @@ export function AchievementSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.0 }}
       viewport={{ once: true }}
-      className="space-y-12"
+      className="space-y-8"
     >
       <h2 className="text-[28px] font-medium">Achievements</h2>
       <div className="space-y-8">
@@ -54,7 +54,7 @@ export function AchievementSection() {
             </div>
             <div className="space-y-2 w-full">
               <div className="flex justify-between items-center">
-                <h3 className="text-[20px] font-medium tracking:tighter">
+                <h3 className="text-[20px] w-[65%] font-medium tracking:tighter">
                   {achievement.title}
                 </h3>
                 <span className="text-sm text-muted-foreground ml-4 ">

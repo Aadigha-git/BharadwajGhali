@@ -17,10 +17,10 @@ export function HeroSection() {
         Shubham Gaur
       </h1>
       <div className="space-y-2 sm:space-y-8">
-        <div className="space-y-3 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground">
+        <div className="space-y-2 text-sm sm:text-base lg:text-[16px] leading-relaxed text-muted-foreground">
           <p>
             I am a full time software developer, part time hacker. I believe in
-            the philosophy, "An idiot admires complexity, a genius admires
+            the philosophy, &quot;An idiot admires complexity, a genius admires
             simplicity." Outside of programming, I enjoy writing my blog,
             spending time offline and learning about newer innovations.
           </p>
@@ -38,7 +38,7 @@ export function HeroSection() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2.5 lg:text-[16px] sm:gap-4">
+        <div className="flex pt-2 flex-wrap gap-2.5 lg:text-[16px] sm:gap-4">
           <Button
             asChild
             variant="outline"
@@ -65,7 +65,7 @@ export function HeroSection() {
             className="group text-base sm:text-lg"
           >
             <Link
-              href="https://drive.google.com/file/d/1d0eyD_2s5iHf-WsSAnMxhVAYB4yaEi6M/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VJpCLHLKdzpM9QcrSLR-nvXM3B6jkhYH/view?usp=sharing"
               rel="noopener noreferrer"
             >
               <p>Resume</p>
