@@ -70,7 +70,11 @@
   }
 
   p {
+<<<<<<< HEAD
     font-size: 20px;
+=======
+    font-size: 15px;
+>>>>>>> cae115d03a8ffd89e61d856c27861567c51c738d
   }
 
   a {
@@ -93,7 +97,7 @@
 
   p {
     @apply leading-relaxed;
-    font-size: 16px;
+    font-size: 14.5px;
   }
 
   .text-balance {
