@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navigation } from "@/components/navigation";
 import { LoadingScreen } from "@/components/loading-screen";
-
+[]
 export const metadata: Metadata = {
   title: "Shubham Gaur ",
   description: "Full-Stack Engineer specializing in AI/ML and Cybersecurity",
