@@ -41,10 +41,6 @@ export default function AboutPage() {
                 about them, fixing my computer, taking apart hard drives.
               </motion.p>
 
-              {/* <div className="w-full max-w-[600px] ">
-                <Carousel images={images} />
-              </div> */}
-
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -121,6 +117,22 @@ export default function AboutPage() {
               </motion.p>
             ))}
           </motion.div>
+        </Section>
+
+        <Section>
+          <motion.h2
+            className="text-2xl sm:text-xs mt-6 lg:text-[28px] font-medium"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }}
+            viewport={{ once: true }}
+          >
+            Pictures
+          </motion.h2>
+
+          <div className="w-full max-w-[600px] ">
+            <Carousel images={images} />
+          </div>
         </Section>
       </div>
     </Container>
