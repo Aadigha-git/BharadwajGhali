@@ -15,18 +15,26 @@ interface Project {
 export function ProjectSection() {
   const projects = [
     {
+      title: "Astroyapper",
+      description:
+        "Astroyapper is a SaaS, it uses AI and pesonal information to compute astronomical calculations, made possible by using the algorithms and processes used by astrologers to generate predictions.",
+      technologies: ["React", "Firebase", "Typescript", "Tailwind", "Render"],
+      demo: "https://astroyapper.com",
+    },
+    {
       title: "Meetster",
       description:
         "Meetster aims to making scheduling IRL meets, easy and fun. Meetster is currently in protoype development, and can be waitlisted.",
       technologies: ["React + Vite", "Supabase", "Typescript"],
       demo: "https://meetster.gaurshubham.com",
     },
+
     {
       title: "Anti AI Website",
       description:
         "Built company website and HR management system, streamlining 6,000+ monthly applications.",
       technologies: ["React", "Next.js", "PostgreSQL", "Javascript", "AWS"],
-      demo: "https://anti.ai",
+      demo: "https://antiai.ltd",
     },
     {
       title: "CyberBattleSim (Microsoft)",
