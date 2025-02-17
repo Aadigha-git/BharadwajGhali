@@ -18,8 +18,9 @@ export function ProjectSection() {
       title: "AI in Speech Processing",
       description:
         "Astroyapper is a SaaS, it uses AI and pesonal information to compute astronomical calculations, made possible by using the algorithms and processes used by astrologers to generate predictions.",
-      technologies: ["Python", "Librosa", "Matplotlib", "Numpy"],
-        github: "https://github.com/Aadigha-git/SpeechProcessing",
+        technologies: ["Python", "Librosa", "Matplotlib", "Numpy"],
+      demo: "",  
+      github: "https://github.com/Aadigha-git/SpeechProcessing",
     },
   
   ];
