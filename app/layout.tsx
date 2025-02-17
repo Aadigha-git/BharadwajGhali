@@ -6,8 +6,8 @@ import { Navigation } from "@/components/navigation";
 import { LoadingScreen } from "@/components/loading-screen";
 [];
 export const metadata: Metadata = {
-  title: "Shubham Gaur ",
-  description: "Full-Stack Engineer specializing in AI/ML and Cybersecurity",
+  title: "Bharadwaj Ghali ",
+  description: "Aspiring Data Engineer with an interest in finance",
 };
 
 export default function RootLayout({
