@@ -17,10 +17,10 @@ export default function WorkPage() {
         viewport={{ once: true }}
         className="space-y-16"
       >
-        <ExperienceSection />
         <EducationSection />
-        <SkillsSection />
+        <ExperienceSection />
         <ProjectSection />
+        <SkillsSection />        
         <AchievementSection />
       </motion.div>
     </div>
