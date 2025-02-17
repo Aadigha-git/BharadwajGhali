@@ -1,5 +1,5 @@
 1:HL["/BharadwajGhali/_next/static/css/efca1b6d64d15277.css","style"]
-0:["qAzLMozlathps2B3JtnyP",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/BharadwajGhali/_next/static/css/efca1b6d64d15277.css","precedence":"next"}]],"$L3"]]]]
+0:["UDnuurD-fmej1dCN8dyjb",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/BharadwajGhali/_next/static/css/efca1b6d64d15277.css","precedence":"next"}]],"$L3"]]]]
 4:I{"id":4657,"chunks":["998:static/chunks/998-fdd13b2aec748278.js","683:static/chunks/683-ac2c8997ca1190f2.js","656:static/chunks/656-75e633a6f31987b8.js","185:static/chunks/app/layout-c6b99b67979dd5bb.js"],"name":"ThemeProvider","async":false}
 5:I{"id":4454,"chunks":["998:static/chunks/998-fdd13b2aec748278.js","683:static/chunks/683-ac2c8997ca1190f2.js","656:static/chunks/656-75e633a6f31987b8.js","185:static/chunks/app/layout-c6b99b67979dd5bb.js"],"name":"LoadingScreen","async":false}
 6:I{"id":8259,"chunks":["998:static/chunks/998-fdd13b2aec748278.js","683:static/chunks/683-ac2c8997ca1190f2.js","656:static/chunks/656-75e633a6f31987b8.js","185:static/chunks/app/layout-c6b99b67979dd5bb.js"],"name":"Navigation","async":false}
