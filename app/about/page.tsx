@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { images, books } from "@/data/about";
+import { books } from "@/data/about";
 import { Carousel } from "@/components/carousel";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
@@ -35,21 +35,10 @@ export default function AboutPage() {
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
               >
-                Since my childhood, I was fascinated by computers and
-                technology. At 10, I was curious enough to learn PowerPoint on
-                my own. As a result, I spent years of my childhood learning
-                about them, fixing my computer, taking apart hard drives.
-              </motion.p>
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
-                viewport={{ once: true }}
-              >
-                I&apos;ve spent countless hours playing Condition Zero, Total
-                Overdose, Grand Theft Auto, Need For Speed etc. I first learnt
-                programming using QBasic during my school, thanks to Windows XP
+                As life progressed, I have grown a keen fascination toward computers, finance and
+                technology. As a result, I spent years learning
+                about them, fixing my computer, and taking apart broken tablets. I first learnt
+                programming using Visual Basic during my school, thanks to Windows XP
                 & computer viruses I learnt the habit of fixing errors, early in
                 life.
               </motion.p>
@@ -60,28 +49,9 @@ export default function AboutPage() {
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
               >
-                Other than programming I enjoy astrophotography, a hobby I
-                picked up casually exploring my phone camera&apos;s
-                capabilities, I&apos;ve captured different shots of moons, stars
-                & nebulas. During my college, I started writing my own blog, The
-                Zero Days of Life where I write about my daily life, my
-                failures, challenges etc.
-              </motion.p>
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
-                viewport={{ once: true }}
-              >
-                My work is a reflection of my inspirations. I have been very
-                much inspired by fictional characters, music & programmers,
-                people such as Iron Man (for putting his passion for technology
-                above everything else), Rocky Balboa (for never giving up),
-                Kevin Mitnick (for being my hacker inspiration), Linus Torvalds
-                (for his beautiful contribution to open source), Karate Kid (for
-                teaching me wax on, wax off!), Pink Floyd (for every one of
-                their life altering hits).
+                Other than programming I take pleasure in travelling, exploring, and observing life.
+                I enjoy dabbling in the philosophies of human kind and exploring different schools of thought. 
+                In my downtime, I enjoy watching movies and learning about finance through podcasts. 
               </motion.p>
             </div>
           </motion.div>
@@ -118,22 +88,7 @@ export default function AboutPage() {
             ))}
           </motion.div>
         </Section>
-
-        <Section>
-          <motion.h2
-            className="text-2xl sm:text-xs mt-6 lg:text-[28px] font-medium"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2 }}
-            viewport={{ once: true }}
-          >
-            Pictures
-          </motion.h2>
-
-          <div className="w-full max-w-[600px] ">
-            <Carousel images={images} />
-          </div>
-        </Section>
+        
       </div>
     </Container>
   );
