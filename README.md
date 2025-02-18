@@ -1,4 +1,4 @@
-# Shubham's Next Portfolio
+# Bharadwaj's Next Portfolio
 
 A modern, responsive portfolio website built with Next.js 13, TypeScript, Tailwind CSS, and Framer Motion.
 
